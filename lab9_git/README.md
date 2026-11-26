@@ -105,4 +105,12 @@ git diff сравнивает текущее состояние с staged, а gi
 ![замена содержимого greeting.txt echo с перенаправлением вывода, индексирование, коммит, текущая ветка feature/uppercase и граф всех веток lab9_git](scrshots/bigloguppercase.png)
 
 4) Переключусь на главную ветку, посмотрю содержимое greeting.txt, сравню ветки и объединю их, и снова посмотрю содержимое файла:
+![Переключение веток, содержимое greeting.txt (файл в ветке отсутствует), сравнение веток](scrshots/diffmainupprcase.png)
+![Слияние веток](scrshots/merge.png)
+![просмотр файла после слияния](scrshots/HELLO.png)
 
+5) Удаляю ветку feature/uppercase, мерджу mybranch в main, посмотрю вывод git log --oneline --graph --all:
+![Удаление ветки с верхим регистром, слияние mybranch в main (already up to date), граф веток на текущий момент](scrshots/mybranchmerge.png)
+
+6) Выполняю пуш ветки и документа на репо:
+!
