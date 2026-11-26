@@ -11,3 +11,8 @@ void bubbleSort(int arr[], int n) {
 }
 //bablsort
 //sortbabl
+void main(){
+int a = {4,2};
+bubbleSort(a,3);
+return 0;   
+}
