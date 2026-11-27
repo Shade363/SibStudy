@@ -176,4 +176,6 @@ git diff сравнивает текущее состояние с staged, а gi
 
 ![Исправляю конфликты в mergesort.py](scrshots/fixxinn.png)
 
-![Выполнение push]
+![Выполнение push](scrshots/verylastpush.png)
+
+# Конец.
