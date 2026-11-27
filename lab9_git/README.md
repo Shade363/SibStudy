@@ -29,7 +29,7 @@
 9) Добавлю в изменения второй комментарий и сделаю коммит, после чего запушу на гитхаб:
 ![Добавление изменения, коммит и пуш на main](scrshots/pushsort.png)
 
-## ВЕТКИ
+### ВЕТКИ
 
 1) Создам новую ветку mybranch и посмотрю список всех веток:
 ![git branch mybranch и git branch](scrshots/mybranchmade.png)
@@ -106,7 +106,7 @@ git diff сравнивает текущее состояние с staged, а gi
 
 ![пуш на репо](scrshots/mybranchpush.png)
 
-## Ветки и ff-merge
+### Ветки и ff-merge
 
 1) Создам файл greeting.txt, проиндексирую его и закоммитчу с
 сообщением “Add file greeting.txt”. После добавлю в него слово hello, снова индексирую и коммитчу с текстом "Add content to greeting.txt":
@@ -152,4 +152,28 @@ git diff сравнивает текущее состояние с staged, а gi
 
 ![Вывод git log --oneline --graph после исправления конфликта](scrshots/afterconflict.png)
 
-![Пуш изменений]()
+![Пуш изменений](scrshots/pushmain2.png)
+
+### Merge конфликты для сортировки MergeSort на python.
+
+1) Создам файлы base.py, righty.py, lefty.py, а после создам файл mergesort.py с содержимым base.py, проиндексирую и закоммитчу:
+![Содержимое base.py, запись этого в mergesort.py, индексирование](scrshots/mergesortbase.png)
+
+![коммит](scrshots/commitms.png)
+
+2) Создам новую ветку Mergesort-Impl и переключусь на неё, заменяю содержимое mergesort.py на содержимое righty.py, коммит изменений:
+![Создание новой ветки, переключение, замена содержимого mergesort и коммит](scrshots/rightychange.png)
+
+3) Переключусь на main и заменю всё содержимое mergesort.py на содержимое lefty.py, после сделаю коммит:
+![Переключение, замена содержимого и коммит](scrshots/leftychange.png)
+
+4) Посмотрю вывод git log --oneline --graph и git branch. Выполню мердж Mergesort-Impl в main, исправлю все конфликты и сделаю пуш изменений в main:
+![git log с последними коммитами main](scrshots/gitlogmain.png)
+
+![git branch показывает все ветки, Mergesort-Impl включительно. На данный момент нахожусь на main](scrshots/branchnow.png)
+
+![Конфликт при слиянии веток](scrshots/merge2.png)
+
+![Исправляю конфликты в mergesort.py](scrshots/fixxinn.png)
+
+![Выполнение push]
